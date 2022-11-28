@@ -1,0 +1,62 @@
+#chartContainer {
+    width: 100%;
+}
+
+#priceTooltip,
+#dateTooltip,
+#divider {
+    position: absolute;
+    display: none;
+}
+
+#priceTooltip {
+    background-color: #2574c7;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    box-shadow: 2px 3px 5px #a9a9a9;
+    font-size: 20px;
+}
+
+#dateTooltip {
+    background-color: #6e6f6f;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    box-shadow: 2px 3px 5px #a9a9a9;
+}
+
+#divider {
+    border: 1px dashed #2574c7;
+}
+
+.periodContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.periodContainer .btn {
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.periodContainer .btn.active {
+    border-bottom: 3px solid #2574c7;
+    color: #2574c7;
+}
+
+.detailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.detailContainer .label {
+    color: #ddd;
+    margin-right: 15px;
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JavaScript Canvas Chart</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div id="chartContainer">
+            <canvas id="chart"></canvas>
+            <div class="periodContainer">
+                <a class="btn" onclick="selectPeriod('24h', 0)">24H</a>
+                <a class="btn active" onclick="selectPeriod('7d', 1)">7D</a>
+                <a class="btn" onclick="selectPeriod('1m', 2)">1M</a>
+                <a class="btn" onclick="selectPeriod('3m', 3)">3M</a>
+                <a class="btn" onclick="selectPeriod('1y', 4)">1Y</a>
+                <a class="btn" onclick="selectPeriod('all', 5)">All</a>
+            </div>
+            <div class="detailContainer">
+                <div>
+                    <span class="label">Market Cap</span>
+                    <span id="marketCap"></span>
+                </div>
+                <div>
+                    <span class="label">Volume</span>
+                    <span id="volume"></span>
+                </div>
+            </div>
+        </div>
+        <div id="priceTooltip"></div>
+        <div id="divider"></div>
+        <div id="dateTooltip"></div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
